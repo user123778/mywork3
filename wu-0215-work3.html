@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>亲子故事会 · Kids Story Time</title>
+    <style>
+        /* 作业要求的.page，只改background-color为蜂蜜金#FCE9C9，其余原样不动 */
+        .page {
+            display: inline-block;
+            background-color: #FCE9C9;
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+        }
+
+        /* ③并集选择器 h1‑h6 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #8b4513;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        /* ④ID选择器 p#intro 放大加粗特殊颜色 */
+        p#intro {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #c0392b;
+        }
+
+        /* ⑤带类链接 a.red a.blue */
+        a.red {
+            color: #d62828;
+            text-decoration: none;
+        }
+        a.blue {
+            color: #0077b6;
+            text-decoration: none;
+        }
+
+        /* ①后代选择器 div table a */
+        div table a {
+            text-decoration: underline dotted;
+        }
+
+        /* ②链接伪类 a:link, a:visited, a:hover, a:active */
+        a:link {
+            color:#222;
+        }
+        a:visited {
+            color:#555;
+        }
+        a:hover {
+            background-color: #fff2cc;
+        }
+        a:active {
+            color:#e63946;
+        }
+
+        /* ⑥伪元素 p::first‑letter  div::first‑line */
+        p::first-letter {
+            font-size:1.6em;
+            color:#d35400;
+        }
+        div::first-line {
+            font-weight: 600;
+        }
+
+        .notice {
+            margin-top:20px;
+            padding:10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 95%;
+        }
+        th,td {
+            border:1px solid #996633;
+            padding:8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- ①顶部标题区 -->
+        <div>
+            <h1>亲子故事会 · Kids Story Time</h1>
+        </div>
+
+        <!-- ②活动介绍区 -->
+        <div>
+            <h2 id="intro">活动介绍</h2>
+            <p>欢迎大小朋友来到温暖有趣的亲子故事会。爸爸妈妈可以带上家里的宝贝，围坐在一起，聆听一个个充满想象力的小故事。在这里没有紧张的考试，没有繁重的作业，只有童话、欢笑和陪伴。</p>
+            <p>我们会准备绘本、小玩偶，还有简单的互动小游戏。小朋友可以勇敢上台，分享自己最喜欢的小故事，家长也可以一起参与朗读，度过一段软软暖暖的亲子时光。</p>
+            <p id="intro">重要提示：参加活动请家长全程陪同，记得带上孩子喜欢的一本小绘本哦！</p>
+        </div>
+
+        <!-- ③活动报名信息表格区 至少4行，包含儿童昵称多多 -->
+        <div>
+            <h3>活动报名信息表</h3>
+            <table>
+                <tr>
+                    <th>家长姓名</th>
+                    <th>孩子昵称</th>
+                    <th>孩子年龄</th>
+                    <th>意向分享绘本</th>
+                </tr>
+                <tr>
+                    <td>李妈妈</td>
+                    <td>多多</td>
+                    <td>6岁</td>
+                    <td>小兔子乖乖</td>
+                </tr>
+                <tr>
+                    <td>张爸爸</td>
+                    <td>糖糖</td>
+                    <td>5岁</td>
+                    <td>小熊过桥</td>
+                </tr>
+                <tr>
+                    <td>王妈妈</td>
+                    <td>浩浩</td>
+                    <td>7岁</td>
+                    <td>三只小猪</td>
+                </tr>
+                <tr>
+                    <td>刘爸爸</td>
+                    <td>朵朵</td>
+                    <td>4岁</td>
+                    <td>小红帽</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ④页面链接区 -->
+        <div>
+            <div>
+                <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期活动照片</a>
+                <br>
+                <a class="blue" href="job3.html">在线咨询活动详情</a>
+            </div>
+        </div>
+
+        <!-- ⑤底部公告区 .notice，至少三段，带<br> -->
+        <div class="notice">
+            公告1：故事会每周六下午两点开展，请提前10分钟到场签到。<br>
+            公告2：现场提供饮用水，请小朋友不要携带零食，爱护教室环境。<br>
+            公告3：如果临时不能到场，请提前在报名群告知工作人员。<br>
+        </div>
+    </div>
+</body>
+</html>
